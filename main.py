@@ -15,8 +15,7 @@ from langchain.base_language import BaseLanguageModel
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 
-#openai_api_key = os.environ.get('OPENAI_API_KEY')
-openai_api_key = "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"
+openai_api_key = os.environ.get('OPENAI_API_KEY')
 llm_model = "gpt-3.5-turbo-0301"
 llm = ChatOpenAI(model=llm_model, temperature=0.0, openai_api_key=openai_api_key)
 dictionary_template = """You are an english teacher. \
